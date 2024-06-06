@@ -32,7 +32,8 @@ return (MAX(lft, rght) + 1);
 size_t binary_tree_height(const binary_tree_t *tree)
 {
 size_t h = 0;
-
+if (tree == NULL)
+return (0);
 h = binary_height_helper(tree);
 return (h - 1);
 }
